@@ -5,11 +5,11 @@ import "./comp.scss";
 import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
-import R2 from "./r1.jpg";
-import R1 from "./r2.png";
+import R4 from "./r1.jpg";
+import R2 from "./r2.png";
 import R3 from "./r3.jpg";
-import R5 from "./R4.png";
-import R4 from './r5.png';
+import R1 from "./R4.png";
+import R5 from './r5.png';
 import "../index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
@@ -211,6 +211,12 @@ const HomeFooter = () => {
                   </div>
                   <div className="chamberBoxM">
                     <img src={R3} />
+                  </div>
+                  <div className="chamberBoxM">
+                    <img src={R4} />
+                  </div>
+                  <div className="chamberBoxM">
+                    <img src={R5} />
                   </div>
                 </Slider>
               </div>
