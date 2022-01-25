@@ -1,0 +1,179 @@
+.serviceContainer {
+  display: flex;
+  flex-direction: column;
+
+  .serviceImage {
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    margin-top: -30vh;
+
+    @media (max-width: 980px) {
+      width: 100vw;
+      max-width: 100%;
+      margin-top: 0vh;
+      height: 50vh;
+      background-size: 100% 50vh;
+    }
+  }
+  .serviceContent {
+    display: flex;
+    // background-color: rgb(245, 245, 253);
+    background-color: #e2e2e2;
+    color: rgb(76, 76, 76);
+    position: relative;
+    top: 65vh;
+    @media (max-width: 980px) {
+      flex-direction: column;
+      margin-top: -15vh;
+    }
+    .serviceDescription {
+      flex: 1 1 80%;
+      padding: 5%;
+      display: flex;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19),
+        0 10px 6px rgba(0, 0, 0, 0.23);
+      background-color: #fafafa;
+      color: rgb(47, 47, 47);
+      border-right: 1px solid #e2e2e2;
+      @media (max-width: 980px) {
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 980px) {
+        width: 100vw;
+        max-width: 100%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        column-count: 1;
+      }
+      p::first-letter {
+        font-size: 3rem;
+        line-height: 0px;
+        height: 2px;
+      }
+      p {
+        width: 100%;
+        text-align: justify;
+        color: rgb(47, 47, 47);
+        padding-left: 3vh;
+        column-count: 2;
+        column-gap: 40px;
+        column-width: 100px;
+        @media (max-width: 980px) {
+          width: 90vw;
+          padding-left: 0vh;
+          text-align: justify;
+          column-count: 1;
+          border-right: 0;
+        }
+      }
+      h1 {
+        width: 18vw;
+        font-size: 2.1rem;
+        color: rgb(116, 116, 116);
+        @media (max-width: 980px) {
+          width: 100%;
+          text-align: center;
+        }
+        margin:0;
+      }
+      h4 {
+        font-size: 1.5rem;
+        @media (max-width: 980px) {
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 0px;
+        }
+        // height: 30vh;
+      }
+      .forCol1 {
+        // padding: 0vh 2vw;
+        border-right: 1px solid;
+        
+        border-image: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 0),
+            rgba(77, 77, 77, 1),
+            rgba(77, 77, 77, 0)
+          )
+          1;
+        @media (max-width: 980px) {
+          width: 100vw;
+          max-width: 100%;
+          text-align: left;
+          column-count: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-right: 0;
+          h1{
+            padding-top: 30px;
+          }
+        }
+        p{
+          @media (max-width: 980px) {
+            width: 100vw;
+            max-width: 100%;
+            text-align: left;
+            column-count: 0;
+            border-right: 0;
+          }
+        }
+
+        // background-color: #000;
+      }
+      @media (max-width: 980px) {
+        padding: 0vh 0vw 0vh 0vw;
+        h4 {
+          height: 2vh;
+        }
+      }
+    }
+    .serviceSidebar {
+      display: flex;
+      justify-content: center;
+      width: 20vw;
+      @media (max-width: 2560px) {
+        width: 21vw;
+      }
+      color: rgb(76, 76, 76);
+      padding: 3vh 2vw;
+      .maillable {
+        color: rgb(76, 76, 76);
+      }
+      .sidebar-heading{
+        font-size: 1.3rem;border-bottom: 1px solid;
+        width: 100%;
+      // background-color: palegreen;
+        border-image: linear-gradient(
+            90deg,
+            rgba(77, 77, 77, 0),
+            rgba(77, 77, 77, 1),
+            rgba(77, 77, 77, 0)
+          )
+          1;
+      }
+      @media (max-width: 980px) {
+        display: flex;
+        justify-content: center;
+        padding: 0vh 0vw 0vh 0vw;
+        width: 100vw !important;
+        max-width: 100%;
+        z-index: 1;
+      }
+      @media (max-width: 1366px) {
+        width: 22vw;
+      }
+    }
+  }
+}

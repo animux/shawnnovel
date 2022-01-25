@@ -1,0 +1,100 @@
+.SrContainer {
+  overflow: hidden;
+//   background-color: red;
+  height: 60vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.SrContainerM {
+  overflow: hidden;
+  // background-color: red;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.ItemCont {
+  height: 50vh;
+  width: 100vw;
+  max-width: 100%;
+//   background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: justify;
+    font-size: 1vw;
+    height: 10vh;
+    // background-color: brown;
+  }
+  .ItemBox{
+    //   background-color: darkcyan;
+      width: 90%;
+      margin: 0 auto;
+      height: 50vh;
+      display: flex;
+      img{
+          height: 50vh;
+      }
+      .rightCont{
+        //   background-color: darkgoldenrod;
+          text-align: center;
+          width: 100%;
+          overflow: auto;
+          h4{
+            padding:0 10%;
+            text-align: justify;
+    font-size: 1vw;
+          }
+          p{
+              padding:0 10%;
+              text-align: justify;
+      font-size: 1vw;
+          }
+      }
+  }
+}
+
+.ItemContM {
+  height: 60vh;
+  width: 100vw;
+  max-width: 100%;
+//   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    height: 10vh;
+    // background-color: brown;
+  }
+  
+  .ItemBoxM{
+    //   background-color: darkcyan;
+      width: 100%;
+      // margin: 0 auto;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      img{
+          height: 30vh;
+      }
+      .rightContM{
+        //   background-color: darkgoldenrod;
+          text-align: center;
+          width: 100%;
+          overflow: auto;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          p{text-align: justify;
+      font-size: 3.5vw;
+              padding:10% 10%;
+              background-color:#1d1d1d;
+              color: #e2e2e2;
+          }
+      }
+  }
+}

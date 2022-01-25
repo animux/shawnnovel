@@ -1,0 +1,632 @@
+.forBG {
+  height: 100vh;
+  background-image: url("./3.jpg");
+  width: 100vw;
+  max-width: 100%;
+  // background-color: #fff;
+  background-size: 100% 100vh;
+  position: fixed;
+}
+.forBG:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: linear-gradient(
+    rgba(250, 250, 250, 0.383),
+    rgba(250, 250, 250, 0.6)
+  );
+}
+.forBGM {
+  z-index: -1;
+  height: 100vh;
+  // background-color: turquoise;
+  background-image: url("./3.jpg");
+  width: 100vw;
+  max-width: 100%;
+  background-color: #fff;
+  background-size: 100vw 100vh;
+  position: fixed;
+}
+.MainContainer {
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  // background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // z-index: -1;
+}
+
+.Section1 {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  // z-index: -1;
+  .HeadContainerAfter {
+    height:74vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    align-items: center;
+    background-color: #1d1d1d;
+    z-index: 1;
+    transition: 0.3s all;
+    h1 {
+      color: #fafafa;
+    }
+    h2 {
+      font-size: 2vw;
+      color: #1d1d1d;
+      @media (max-width: 1366px) {
+        font-size: 22px;
+      }
+    }
+    .HeadContents {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(235, 235, 235);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .HeadLeft {
+        height: 100%;
+        width: 30%;
+        // background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 3vh;
+        .forAligning {
+          width: 100%;
+          margin-left: 10vw;
+          h2{
+
+      font-size: 1.5vw;
+          }
+        }
+        img {
+          border-radius: 20px;
+          width: 12vw;
+        }
+        h4 {
+          margin: 0;
+          font-weight: normal;
+
+          @media (max-width: 1366px) {
+            font-size: 11px;
+            font-weight: normal;
+          }
+          @media (max-width: 1325px) {
+            font-size: 10px;
+          }
+        }
+        @media (max-width: 1366px) {
+          margin-top: 3vh;
+          margin-bottom: 3vh;
+        }
+      }
+      .HeadRight {
+        width: 70%;
+        height: 54vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20vw;
+        }
+        p {
+          text-align: justify;
+          font-size: 1.1vw;
+          line-height: 3vh;
+          padding: 0% 10%;
+          overflow: auto;
+          height: 100%;
+          
+          
+        }
+      }
+
+      .HeadCred {
+        margin: 0 5%;
+      }
+    }
+  }
+  .HeadContainerBefore {
+    height: 90vh;
+    width: 20vw;
+    margin-top: 5vh;
+    // background-color: rgba(255, 255, 255, 0.855);
+    // background-color: aqua;
+    // border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // transition: 1s all;
+    img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      cursor: pointer;
+    }
+    h1 {
+      align-items: center;
+      justify-items: center;
+      // background-color: yellowgreen;
+      margin: 2%;
+      text-align: center;
+      border-radius: 10px;
+    }
+    @media (max-width: 1366px) {
+      margin-top: 18vh;
+    }
+  }
+}
+
+.Section1M {
+  height: 80vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15vh;
+  // background-color: #1d1d1d;
+  // z-index: -1;
+  .HeadContainerBefore {
+    height: 70vh;
+    width: 90vw;
+    margin-top: 5vh;
+    // background-color: rgba(255, 255, 255, 0.855);
+    // background-color: aqua;
+    // border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // transition: 1s all;
+    img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      cursor: pointer;
+    }
+    h1 {
+      align-items: center;
+      // background-color: yellowgreen;
+      font-size: 1.5em;
+      margin: 2%;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+  .HeadContainerAfter {
+    height: 120vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1d1d;
+    z-index: 1;
+    // transition: 0.3s all;
+    margin-bottom: 15vh;
+    h1 {
+      color: #fafafa;
+    }
+    h2 {
+      font-size: 2vw;
+      color: #1d1d1d;
+    }
+    .HeadContents {
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+      background-color: rgb(235, 235, 235);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      .HeadLeft {
+        height: 100%;
+        width: 100%;
+        // background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        // line-height: 3vh;
+        img {
+          width: 60vw;
+          margin-top: 20px;
+        }
+        h4 {
+          // padding: 0px 10px 0 70px;
+          margin: 0;
+          overflow: auto;
+        }
+        h2 {
+          // padding: 0px 0 0 70px;
+          font-size: 1.5rem;
+        }
+      }
+      .HeadRight {
+        width: 80%;
+        height: 100%;
+        // background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        align-items: center;
+        img {
+          width: 20vw;
+        }
+        h5 {
+          text-align: justify;
+          font-size: 3.5vw;
+          padding: 0.5%;
+          font-weight: 200;
+        }
+      }
+
+      .HeadCred {
+        margin: 0 5%;
+      }
+    }
+  }
+}
+
+.Section2 {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  // background-color: #1d1d1d;
+  // z-index: -1;
+  .assocHeading {
+    position: absolute;
+    top: 8vh;
+    @media (max-width: 1366px) {
+      top: 6vh;
+    }
+  }
+  .HeadContainerAfter {
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1d1d;
+    z-index: 0;
+    transition: 0.3s all;
+    h1 {
+      color: #fafafa;
+    }
+    h2 {
+      font-size: 1.5vw;
+      font-weight: bolder;
+      color: #1d1d1d;
+    }
+    .HeadContents {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(235, 235, 235);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .HeadLeft {
+        height: 100%;
+        width: 30%;
+        // background-color: yellow;
+        display: flex;
+        padding: 0 0 0 4%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 3vh;
+        .imgBorder2 {
+          // width: 18vw;
+          border-radius: 20px;
+          overflow: hidden;
+          height: 30vh;
+          background-color: #1d1d1d;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        h2 {
+          // background-color: #1d1d1d;
+          text-align: left;
+          // width: 40vw;
+          // background-color: orange;
+        }
+        img {
+          width: 12vw;
+        }
+
+        .ForCreds {
+          // background-color: paleturquoise;
+          margin: 0 0vw;
+          // background-color: orange;
+          // width: 40vw;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h4 {
+            margin: 0 0vw 0 0vw;
+            width: 21vw;
+            font-size: 15px;
+            font-weight: normal;
+            @media (max-width: 1366px) {
+              font-size: 11px;
+              font-weight: normal;
+            }
+            @media (max-width: 1325px) {
+              font-size: 10px;
+            }
+            // background-color: palegreen;
+          }
+        }
+      }
+      .HeadRight {
+        width: 70%;
+        height: 100%;
+        // background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20vw;
+        }
+        p {
+          text-align: justify;
+          font-size: 1.1vw;
+          line-height: 3vh;
+          padding: 0% 10%;
+        }
+      }
+
+      .HeadCred {
+        margin: 0 5%;
+      }
+    }
+  }
+  .SrContainerBefore {
+    height: 90vh;
+    width: 22vw;
+    overflow: hidden;
+    // background-color: rgba(255, 255, 255, 0.855);
+    // background-color: aqua;
+    // border-radius: 10px;
+    margin: 0 5%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    h2 {
+      color: rgb(47, 47, 47);
+    }
+    .imgBorder {
+      overflow: hidden;
+      border-radius: 20px;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      width: 20vw;
+      transition: 0.3s all;
+      img {
+        // width: 20vw;
+        height: 50vh;
+        cursor: pointer;
+        // width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+    // transition: 0.3s all;
+
+    h1 {
+      align-items: center;
+      // background-color: yellowgreen;
+      margin: 2%;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+}
+
+.Section2M {
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  margin: 20% 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  // background-color: #1d1d1d;
+  // z-index: -1;
+  h1{
+    font-size: 1.5em;
+  }
+  .HeadContainerAfter {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 10vh;
+    z-index: 2;
+    transition: 0.3s all;
+    h1 {
+      color: #fafafa;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: #1d1d1d;
+    }
+    .HeadContents {
+      // height: 100%;
+      overflow: auto;
+      width: 100%;
+      background-color: #ebebeb;
+      display: flex;
+      align-items: center;
+      padding-top: 5vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      .HeadLeft {
+        height: 100%;
+        width: 100%;
+        // background-color: yellow;
+        display: flex;
+        // margin-top: 5vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // line-height: 3vh;
+        .imgBorder2 {
+          // width: 18vw;
+          border-radius: 20px;
+          overflow: hidden;
+          height: 30vh;
+          background-color: #1d1d1d;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        h2 {
+          // background-color: #1d1d1d;
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        img {
+          width: 12vw;
+        }
+
+        .ForCreds {
+          h4 {
+            margin: 0 5vh;
+            text-align: center;
+            font-weight: normal;
+          }
+        }
+      }
+      .HeadRight {
+        width: 80%;
+        // height: 100%;
+        // background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20vw;
+        }
+        h5 {
+          text-align: justify;
+          font-size: 4vw;
+          padding: 10% 0 2% 0;
+          font-weight: normal;
+        }
+      }
+
+      .HeadCred {
+        margin: 0 5%;
+      }
+    }
+  }
+  .SrContainerBefore {
+    height: 100%;
+    width: 90vw;
+    overflow: hidden;
+    // background-color: rgba(255, 255, 255, 0.855);
+    // background-color: aqua;
+    // border-radius: 10px;
+    margin: 0 2%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    .imgBorder {
+      overflow: hidden;
+      border-radius: 20px;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      width: 90vw;
+      transition: 0.3s all;
+      img {
+        // width: 20vw;
+        height: 100%;
+        cursor: pointer;
+        // width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+    // transition: 0.3s all;
+
+    h1 {
+      align-items: center;
+      // background-color: yellowgreen;
+      margin: 2%;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+}
+
+.forB {
+  height: 15vh;
+  // background-color: orange;
+}
+
+.ButtonCont{
+  height: 15px;
+  margin-top: 1vh;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.ButtonContM{
+  height: 15px;
+  margin-top: 2vh;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
