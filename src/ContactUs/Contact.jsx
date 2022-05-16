@@ -70,7 +70,7 @@ const Contact = () => {
                       <span>
                         <FontAwesomeIcon icon={faPhoneAlt} />
                       </span>
-                      <p>+88 (02) 88-78565, +88 016-1555-5687</p>
+                      <p>+88 (02) 88-78565, +88 017-2767-6320</p>
                     </h3>
 
                     <h3 style={{ fontWeight: "700" }}>
