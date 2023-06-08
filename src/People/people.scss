@@ -305,8 +305,11 @@
     position: absolute;
     top: 8vh;
     @media (max-width: 1366px) {
-      top: 6vh;
+      top: 2vh;
     }
+  }
+  h2 {
+    text-align: center;
   }
   .HeadContainerAfter {
     height: 70vh;
