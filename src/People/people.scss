@@ -299,8 +299,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  // background-color: #1d1d1d;
-  // z-index: -1;
+  flex-wrap: wrap;
+  flex: 0 0 33.333%;
   .assocHeading {
     position: absolute;
     top: 8vh;
