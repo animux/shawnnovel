@@ -63,7 +63,7 @@ const People = () => {
                 <div className="HeadContainerBefore" onClick={handleHead}>
                   <h1>Head of the Firm</h1>
                   <img src={Head} />
-                  <h2>Shawn S. Novel</h2>
+                  <h2 className="name">Shawn S. Novel</h2>
                 </div>
               ) : (
                 <div className="HeadContainerAfter">
@@ -180,7 +180,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -242,7 +242,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -304,7 +304,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -351,7 +351,7 @@ const People = () => {
                 <div className="HeadContainerBefore" onClick={handleHead}>
                   <h1>Head of the Firm</h1>
                   <img src={Head} />
-                  <h2>Shawn S. Novel</h2>
+                  <h2 className="name">Shawn S. Novel</h2>
                 </div>
               ) : (
                 <div className="HeadContainerAfter">
@@ -461,7 +461,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -521,7 +521,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -581,7 +581,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2>{item.name}</h2>
+                            <h2 className="name">{item.name}</h2>
                           </div>
                         )}
                       </>
