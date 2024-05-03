@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext, useState, createRef, useRef } from "react";
 import GeneralFooter from "../Components/GeneralFooter";
 import Head from "./ShawnNovel.jpeg";
 import "./people.scss";
@@ -48,6 +48,10 @@ const People = () => {
     getPeople();
   }, [getPeople]);
 
+  useEffect(() => {
+    if (currentAss !== null) document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }, [currentAss])
+
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
   });
@@ -63,7 +67,7 @@ const People = () => {
                 <div className="HeadContainerBefore" onClick={handleHead}>
                   <h1>Head of the Firm</h1>
                   <img src={Head} />
-                  <h2 className="name">Shawn S. Novel</h2>
+                  <h2>Shawn S. Novel</h2>
                 </div>
               ) : (
                 <div className="HeadContainerAfter">
@@ -180,7 +184,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -233,6 +237,7 @@ const People = () => {
                             onClick={() => {
                               setcurrentAss(item);
                             }}
+                            tabIndex='0'
                           >
                             {loadingImage && <img src={blank} />}
                             <div className="imgBorder">
@@ -242,7 +247,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -251,8 +256,8 @@ const People = () => {
                     <div className="ItemCont">Nothing to show</div>
                   )}
                   {currentAss && (
-                    <div className="HeadContainerAfter">
-                    <h1>Associate</h1>
+                    <div className="HeadContainerAfter" id={currentAss.name}>
+                      <h1>Associate</h1>
                       <div className="HeadContents">
                         <div className="HeadLeft">
                           <div className="imgBorder2">
@@ -279,7 +284,7 @@ const People = () => {
             </div>
 
             {/* Of Counsel */}
-            <div className="Section2">
+            <div className="Section2M">
               {!loadingPeople ? (
                 <>
                   <div className="assocHeading">
@@ -304,7 +309,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -351,7 +356,7 @@ const People = () => {
                 <div className="HeadContainerBefore" onClick={handleHead}>
                   <h1>Head of the Firm</h1>
                   <img src={Head} />
-                  <h2 className="name">Shawn S. Novel</h2>
+                  <h2>Shawn S. Novel</h2>
                 </div>
               ) : (
                 <div className="HeadContainerAfter">
@@ -461,7 +466,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -521,7 +526,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
@@ -558,7 +563,7 @@ const People = () => {
             </div>
 
             {/* Of Counsel */}
-            <div className="Section2M">
+            <div className="Section2">
               {!currentOC && <h1>Of Counsel</h1>}
               {!loadingPeople ? (
                 <>
@@ -581,7 +586,7 @@ const People = () => {
                                 onLoad={handleImageLoaded}
                               />
                             </div>
-                            <h2 className="name">{item.name}</h2>
+                            <h2>{item.name}</h2>
                           </div>
                         )}
                       </>
