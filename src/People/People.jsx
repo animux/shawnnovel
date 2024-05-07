@@ -50,10 +50,7 @@ const People = () => {
 
   useEffect(() => {
   
-    if (currentAss !== null) {
-      console.log(document.getElementById(currentAss.name))
-      document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
+    if (currentAss !== null) document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
   }, [currentAss])
 
   const isTabletOrMobileDevice = useMediaQuery({
