@@ -49,7 +49,11 @@ const People = () => {
   }, [getPeople]);
 
   useEffect(() => {
-    if (currentAss !== null) document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
+  
+    if (currentAss !== null) {
+      console.log(document.getElementById(currentAss.name))
+      document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
   }, [currentAss])
 
   const isTabletOrMobileDevice = useMediaQuery({
@@ -535,7 +539,7 @@ const People = () => {
                     <div className="ItemCont">Nothing to show</div>
                   )}
                   {currentAss && (
-                    <div className="HeadContainerAfter">
+                    <div className="HeadContainerAfter" id={currentAss.name}>
                       <h1>Associate</h1>
                       <div className="HeadContents">
                         <div className="HeadLeft">
@@ -572,11 +576,11 @@ const People = () => {
                       <>
                         {!currentOC && (
                           <div
-                            key={index}
-                            className="SrContainerBefore"
-                            onClick={() => {
-                              setcurrentOC(item);
-                            }}
+                          key={index}
+                          className="SrContainerBefore"
+                          onClick={() => {
+                            setcurrentOC(item);
+                          }}
                           >
                             {loadingImage && <img src={blank} />}
                             <div className="imgBorder">
