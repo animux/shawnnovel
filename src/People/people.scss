@@ -308,14 +308,14 @@
     position: absolute;
     top: 8vh;
     @media (max-width: 1366px) {
-      top: 8vh;
+      top: 5vh;
     }
   }
   h2 {
     text-align: center;
   }
   .HeadContainerAfter {
-    height: 70vh;
+    height: 100%;
     width: 80vw;
     display: flex;
     flex-direction: column;
