@@ -56,7 +56,7 @@
   background-color: #1d1d1d;
   // z-index: -1;
   .HeadContainerAfter {
-    height:74vh;
+    height: 74vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -94,9 +94,8 @@
         .forAligning {
           width: 100%;
           margin-left: 10vw;
-          h2{
-
-      font-size: 1.5vw;
+          h2 {
+            font-size: 1.5vw;
           }
         }
         img {
@@ -136,8 +135,6 @@
           padding: 0% 10%;
           overflow: auto;
           height: 100%;
-          
-          
         }
       }
 
@@ -308,7 +305,7 @@
     position: absolute;
     top: 8vh;
     @media (max-width: 1366px) {
-      top: 5vh;
+      top: 0vh;
     }
   }
   h2 {
@@ -475,7 +472,7 @@
   align-items: center;
   // background-color: #1d1d1d;
   // z-index: -1;
-  h1{
+  h1 {
     font-size: 1.5em;
   }
   .HeadContainerAfter {
@@ -617,7 +614,7 @@
   // background-color: orange;
 }
 
-.ButtonCont{
+.ButtonCont {
   height: 15px;
   margin-top: 1vh;
   width: 70px;
@@ -627,7 +624,7 @@
   font-size: 1.3rem;
 }
 
-.ButtonContM{
+.ButtonContM {
   height: 15px;
   margin-top: 2vh;
   width: 70px;
