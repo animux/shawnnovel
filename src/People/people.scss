@@ -303,7 +303,7 @@
   flex: 0 0 33.333%;
   .assocHeading {
     position: absolute;
-    top: 8vh;
+    top: 0vh;
     @media (max-width: 1366px) {
       top: 0vh;
     }
@@ -318,7 +318,6 @@
     flex-direction: column;
     align-items: center;
     background-color: #1d1d1d;
-    z-index: 0;
     transition: 0.3s all;
     h1 {
       color: #fafafa;

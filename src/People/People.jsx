@@ -1,4 +1,10 @@
-import React, { useEffect, useContext, useState, createRef, useRef } from "react";
+import React, {
+  useEffect,
+  useContext,
+  useState,
+  createRef,
+  useRef,
+} from "react";
 import GeneralFooter from "../Components/GeneralFooter";
 import Head from "./ShawnNovel.jpeg";
 import "./people.scss";
@@ -49,9 +55,11 @@ const People = () => {
   }, [getPeople]);
 
   useEffect(() => {
-  
-    if (currentAss !== null) document.getElementById(currentAss.name).scrollIntoView({ behavior: 'smooth', block: 'center' })
-  }, [currentAss])
+    if (currentAss !== null)
+      document
+        .getElementById(currentAss.name)
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentAss]);
 
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
@@ -164,7 +172,7 @@ const People = () => {
               {!loadingPeople ? (
                 <>
                   <div className="assocHeading">
-                  {!currentSrAss &&<h1>Senior Associates</h1>}
+                    {!currentSrAss && <h1>Senior Associates</h1>}
                   </div>
                   {peopleList ? (
                     peopleList.Seniors.map((item, index) => (
@@ -195,7 +203,7 @@ const People = () => {
                   )}
                   {currentSrAss && (
                     <div className="HeadContainerAfter">
-                    <h1>Senior Associate</h1>
+                      <h1>Senior Associate</h1>
                       <div className="HeadContents">
                         <div className="HeadLeft">
                           <div className="imgBorder2">
@@ -226,7 +234,7 @@ const People = () => {
               {!loadingPeople ? (
                 <>
                   <div className="assocHeading">
-                  {!currentAss &&<h1>Associates</h1>}
+                    {!currentAss && <h1>Associates</h1>}
                   </div>
                   {peopleList ? (
                     peopleList.Associates.map((item, index) => (
@@ -238,7 +246,7 @@ const People = () => {
                             onClick={() => {
                               setcurrentAss(item);
                             }}
-                            tabIndex='0'
+                            tabIndex="0"
                           >
                             {loadingImage && <img src={blank} />}
                             <div className="imgBorder">
@@ -289,7 +297,7 @@ const People = () => {
               {!loadingPeople ? (
                 <>
                   <div className="assocHeading">
-                    {!currentOC &&<h1>Of Counsel</h1>}
+                    {!currentOC && <h1>Of Counsel</h1>}
                   </div>
                   {peopleList ? (
                     peopleList.OffCouncel.map((item, index) => (
@@ -320,7 +328,7 @@ const People = () => {
                   )}
                   {currentOC && (
                     <div className="HeadContainerAfter">
-                    <h1>Of Counsel</h1>
+                      <h1>Of Counsel</h1>
                       <div className="HeadContents">
                         <div className="HeadLeft">
                           <div className="imgBorder2">
@@ -573,11 +581,11 @@ const People = () => {
                       <>
                         {!currentOC && (
                           <div
-                          key={index}
-                          className="SrContainerBefore"
-                          onClick={() => {
-                            setcurrentOC(item);
-                          }}
+                            key={index}
+                            className="SrContainerBefore"
+                            onClick={() => {
+                              setcurrentOC(item);
+                            }}
                           >
                             {loadingImage && <img src={blank} />}
                             <div className="imgBorder">
