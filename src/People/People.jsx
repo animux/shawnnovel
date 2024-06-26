@@ -69,7 +69,7 @@ const People = () => {
       {!isTabletOrMobileDevice ? (
         <>
           <div className="forBG" onClick={closeEverything}></div>
-          <div className="MainContainer" onClick={closeEverything}>
+          <div className="MainContainer" onClick={closeEverything}  >
             {/* HEAD OF THE FIRM */}
             <div className="Section1">
               {!headSec ? (
